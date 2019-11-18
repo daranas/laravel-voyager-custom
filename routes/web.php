@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::group(array('prefix' => '/'), function () {
+//     Route::get('/', 'MainController@homePage');
+// });
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
